@@ -19,7 +19,7 @@ all:
 
 docker-manager-first:
   hosts:
-    srv1348228.hstgr.cloud:
+    qa-server:
       ansible_host: '76.13.183.142'
       data_label: data1
 
