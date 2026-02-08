@@ -90,7 +90,7 @@ jobs:
     environment: ${{ inputs.environment }}
     needs: [get-backup-ssh-key, get-production-encryption-key, get-jump-ssh-key]
     if: always()
-    runs-on: ubuntu-24.04
+    runs-on: [self-hosted, qa]
     outputs:
       outcome: ${{ steps.deploy.outcome }}
     timeout-minutes: 60
